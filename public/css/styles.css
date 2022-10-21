@@ -1,3 +1,4 @@
+
 /* General */
 * {
     font-family: 'Roboto';
@@ -57,7 +58,7 @@ header {
 
 /* Search container */
 #search-container{
-    background-image: url("../img/banner.jpg");
+    background-image: url("../img/banner-search.jpg");
     background-size: cover;
     background-position: center;
     height: 400px;
