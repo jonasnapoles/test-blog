@@ -3,11 +3,9 @@
 @section('title', 'BBC Events')
 
 @section('content')
-<<<<<<< HEAD
     @foreach ($events as $event)
         <p>{{$event->title}} -- {{$event->description}}</p>
     @endforeach
-=======
 <div id="search-container" class="col-md-12">
     <h1>Search an event</h1>
     <form action="">
@@ -34,5 +32,4 @@
     </div>
 </div>
 
->>>>>>> 69f4771 (feature(#02):Update-events-MVC-styles)
 @endsection
