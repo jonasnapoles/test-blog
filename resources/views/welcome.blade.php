@@ -3,9 +3,6 @@
 @section('title', 'BBC Events')
 
 @section('content')
-    @foreach ($events as $event)
-        <p>{{$event->title}} -- {{$event->description}}</p>
-    @endforeach
 <div id="search-container" class="col-md-12">
     <h1>Search an event</h1>
     <form action="">
