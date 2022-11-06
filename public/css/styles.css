@@ -35,6 +35,16 @@ header {
     border-color: #c28008;
 }
 
+.msg{
+    background-color: #D4EDDA;
+    color: #155724;
+    border: 1px solid #C3E6CB;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
 /* navbar */
 #navbar img {
     width: 50px;
@@ -140,7 +150,7 @@ header {
 #event-crate-container textarea{
     font-size: 12px;
 }
- 
+
 /* Footer */
 footer{
     text-align: center;
