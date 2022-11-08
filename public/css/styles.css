@@ -35,9 +35,19 @@ header {
     border-color: #c28008;
 }
 
+.msg {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
 /* navbar */
 #navbar img {
-    width: 50px;
+    width: 40px;
 }
 
 #navbar{
@@ -96,11 +106,11 @@ header {
 }
 
 #events-container .card{
-    flex: 1 1 0;
+    flex: 1 1 24%;
     max-width: 25%;
     border-radius: 10px;
     padding: 0;
-    margin: 5px;
+    margin: .5%;
 }
 
 #events-container img{
@@ -140,7 +150,7 @@ header {
 #event-crate-container textarea{
     font-size: 12px;
 }
- 
+
 /* Footer */
 footer{
     text-align: center;
