@@ -46,5 +46,13 @@ class EventController extends Controller
 
         return redirect('/');
     }
+
+    public function show($id)
+    {
+        $event = Event::findOrFail($id);
+
+        return view('events.show', ['event' => $event]);
+    }
+
 }
 
