@@ -1,8 +1,7 @@
-
 /* General */
 * {
     font-family: 'Roboto';
- }
+}
 
 
 /* body */
@@ -22,15 +21,15 @@ header {
 }
 
 .container-fluid {
-  padding: 0;
+    padding: 0;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #f2a420;
     border: 2px solid #c28008;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: #c28008;
     border-color: #c28008;
 }
@@ -50,24 +49,24 @@ header {
     width: 40px;
 }
 
-#navbar{
+#navbar {
     justify-content: space-between;
     background-color: #fff;
     padding: 5px 0;
 }
 
-#navbar a{
+#navbar a {
     font-size: 14px;
     color: #757575;
 }
 
-#navbar a:hover{
+#navbar a:hover {
     color: #f2a340;
 }
 
 
 /* Search container */
-#search-container{
+#search-container {
     background-image: url("../img/banner-search.jpg");
     background-size: cover;
     background-position: center;
@@ -76,36 +75,36 @@ header {
     text-align: center;
 }
 
-#search-container h1{
+#search-container h1 {
     color: #f2a340;
     margin-bottom: 30px;
     font-weight: 900;
 }
 
-#search-container form{
+#search-container form {
     width: 15%;
     margin: 0 auto;
 }
 
 /* Event list */
-#events-container{
+#events-container {
     padding: 50px;
 }
 
-#events-container h2{
+#events-container h2 {
     margin-bottom: 10px;
 }
 
-#events-container .subtitle{
+#events-container .subtitle {
     color: #757575;
     margin-bottom: 30px;
 }
 
-#cards-container{
+#cards-container {
     display: flex;
 }
 
-#events-container .card{
+#events-container .card {
     flex: 1 1 24%;
     max-width: 25%;
     border-radius: 10px;
@@ -113,46 +112,86 @@ header {
     margin: .5%;
 }
 
-#events-container img{
+#events-container img {
     max-height: 150px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-.card .card-date{
+.card .card-date {
     font-size: 12px;
     color: #ccc;
 }
 
-.card .card-title{
+.card .card-title {
     color: #212121;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 30px;
 }
 
-.card .card-participants{
+.card .card-participants {
     font-size: 14px;
     color: #757575;
 }
 
 
 /*Event create page*/
-#event-create-container{
+#event-create-container {
     padding: 30px;
 }
 
-#event-create-container label{
+#event-create-container label {
     font-weight: bold;
-    }
+}
+
 #event-crate-container input,
 #event-crate-container select,
-#event-crate-container textarea{
+#event-crate-container textarea {
     font-size: 12px;
 }
 
+/* Event page */
+
+#image-container,
+#info-container{
+    margin-top: 30px;
+}
+
+#image-container img{
+    border-radius: 10px;
+}
+
+#info-container h1 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#info-container p {
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+}
+
+
+#info-container h3,
+#description-container h3{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#info-container ion-icon{
+    font-size: 20px;
+    color: #F2A340;
+    margin-right: 5px;
+}
+
+#info-container #event-submit {
+    margin: 20px 0;
+}
+
 /* Footer */
-footer{
+footer {
     text-align: center;
     background-color: #353e48;
     color: #fff;
@@ -162,6 +201,6 @@ footer{
     width: 100%;
 }
 
-footer p{
+footer p {
     margin-bottom: 0;
 }

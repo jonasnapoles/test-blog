@@ -3,6 +3,7 @@
 @section('title', 'BBC Events')
 
 @section('content')
+
     <div id="search-container" class="col-md-12">
         <h1>Search an event</h1>
         <form action="">
@@ -20,7 +21,7 @@
                         <p class="card-date">20/10/2022</p>
                         <h5 class="card-title">{{ $event->title }}</h5>
                         <p class="card-participants">x Participants</p>
-                        <a href="#" class="btn btn-primary">More details</a>
+                        <a href="/events/{{ $event->id }}" class="btn btn-primary">More details</a>
                     </div>
                 </div>
             @endforeach

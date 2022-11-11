@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'BBC Events')
+@section('title', 'Create envent')
 
 @section('content')
 
