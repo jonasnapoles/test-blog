@@ -32,6 +32,24 @@
                 <input type="text" class="form-control" name="description" id="description"
                     placeholder="Event description">
             </div>
+            <div class="form-group">
+                <label for="title">Infrastructure details</label>
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="chair"> Chair
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="stage"> Stage
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="tables"> Tables
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="catering"> Catering
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="souvenir"> Souvenir
+                </div>
+            </div>
             <input type="submit" class="btn btn-primary" value="Create event">
         </form>
 
