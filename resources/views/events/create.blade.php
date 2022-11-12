@@ -17,6 +17,10 @@
                 <input type="text" class="form-control" name="title" id="title" placeholder="Event name">
             </div>
             <div class="form-group">
+                <label for="date">Date of event:</label>
+                <input type="date" class="form-control" name="date" id="date">
+            </div>
+            <div class="form-group">
                 <label for="title">City:</label>
                 <input type="text" class="form-control" name="city" id="city" placeholder="Event address">
             </div>
@@ -28,12 +32,12 @@
                 </select>
             </div>
             <div class="form-group">
-                <label for="title">Description</label>
+                <label for="title">Description:</label>
                 <input type="text" class="form-control" name="description" id="description"
                     placeholder="Event description">
             </div>
             <div class="form-group">
-                <label for="title">Infrastructure details</label>
+                <label for="title">Infrastructure details:</label>
                 <div class="form-group">
                     <input type="checkbox" name="items[]" value="chair"> Chair
                 </div>
