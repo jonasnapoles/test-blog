@@ -57,7 +57,6 @@ class EventController extends Controller
 
         $user = auth()->user();
         $event->user_id = $user->id;
-
         $event->save();
 
         return redirect('/');
@@ -72,7 +71,7 @@ class EventController extends Controller
         return view('events.show', ['event' => $event, 'eventOwner' => $eventOwner]);
     }
 
-    public function dashboard(){
+        public function dashboard(){
 
         $user = auth()->user();
 
@@ -80,6 +79,5 @@ class EventController extends Controller
 
         return view('events.dashboard',['events' => $events]);
     }
-
 }
 
