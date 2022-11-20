@@ -20,7 +20,6 @@ class EventController extends Controller
             $events = Event::all();
         }
 
-        
         return view('welcome',['events' => $events, 'search' => $search]);
     }
 
@@ -51,7 +50,7 @@ class EventController extends Controller
 
             $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
 
-            $request->image->move(public_path('img/events'), $imageName);
+            $requestImage->move(public_path('img/events'), $imageName);
 
             $event->image = $imageName;
         }
@@ -68,11 +67,19 @@ class EventController extends Controller
     {
         $event = Event::findOrFail($id);
 
-        $eventOwner = User::where('id',[ $event->user_id])->first()->toArray();
+        $eventOwner = User::where('id', $event->user_id)->first()->toArray();
 
         return view('events.show', ['event' => $event, 'eventOwner' => $eventOwner]);
     }
 
+    public function dashboard(){
+
+        $user = auth()->user();
+
+        $events = $user->events;
+
+        return view('events.dashboard',['events' => $events]);
+    }
 
 }
 
