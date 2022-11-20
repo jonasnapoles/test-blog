@@ -79,5 +79,6 @@ class EventController extends Controller
 
         return view('events.dashboard',['events' => $events]);
     }
+
 }
 
