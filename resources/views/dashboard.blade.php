@@ -1,15 +1,17 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+@extends('layouts.main')
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <x-jet-welcome />
-            </div>
-        </div>
-    </div>
-</x-app-layout>
+@section('title', 'Dashboard')
+
+@section('content')
+
+<div class="col-md-10 offset-md-1 deshboard-title-container">
+    <h1>My events</h1>
+</div>
+
+<div class="col-md-10 offset-md-1 deshboard-events-container">
+    @if(count($events)>0)
+    @else
+    <p>You don't have events yet, <a href="/events/create">Create a new event</a></p>
+</div>
+
+@endsection
