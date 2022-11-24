@@ -103,7 +103,7 @@ class EventController extends Controller
         if($request->hasFile('image') && $request->file('image')->isValid()){
 
         $requestImage = $request->image;
-        
+
         $extension = $requestImage->extension();
 
         $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
@@ -113,7 +113,7 @@ class EventController extends Controller
         $data['image'] = $imageName;
     }
 
-        Event::findOrFail($request->id)->update($request->all());
+        Event::findOrFail($request->id)->update($data);
 
         return redirect('/dashboard')->with('msg', 'Successfully edited event');
     }
